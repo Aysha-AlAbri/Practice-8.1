@@ -56,12 +56,14 @@ header{
     width:45%;
 }
 .search input {
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     height: 48px;
     padding: 12 16px;
     border: 1px solid var(--border);
     border-radius: 8px;
-    max-width:300px;
+    max-width:500px;
    
 }
 
@@ -202,7 +204,6 @@ font-size: 12px;
     background-color: var(--white);
     border: 1px solid var(--border);
     
-    
 }
 .icon{
     display: block;
@@ -218,4 +219,106 @@ font-size: 12px;
     color: var(--navy);
     font-size: 13px;
     font-weight: 500;
+}
+.Next-few-hours{
+    margin-top: 40px;
+}
+.Next-few-hours h2{
+     font-size: 18px ;
+    font-weight:500 ;
+    margin-bottom: 16px;
+
+}
+.Forecast{
+    color:var(--blue);
+    font-size:10px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+.details-hours{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 8px;
+    padding: 10px;
+    background-color: var(--white);
+    border: 1px solid #E5EDF4;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px #12233F12;
+    margin-top: 20px;
+}
+.card-hours, .card-another{
+    min-height: 95;
+    padding:10;
+    display:flex;
+    flex-direction: column ;
+    align-items:center;
+    justify-content: center;
+    gap: 14px;
+    border-radius: 10px;
+
+}
+.card-hours{
+    background-color: var(--blue);
+    border:1px solid var(--blue);
+
+}
+.card-hours p,
+.card-hours strong {
+    color: var(--white);
+}
+
+.card-another {
+    background-color: var(--white);
+    border: 1px solid transparent;
+}
+.card-another:hover {
+    background-color: var(--sky);
+}
+.day-forecast{
+   margin-top: 40px; 
+}
+.day-forecast h2{
+    font-size: 18px ;
+    font-weight:500 ;
+    margin-bottom: 16px;
+}
+ .week{
+    color:var(--blue);
+    font-size:10px;
+    font-weight: 700;
+    margin-bottom: 8px;
+ }
+
+.details-week {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+}
+
+.card-week {
+    min-height: 125px;
+    padding: 16px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--white);
+    border: 1px solid #E5EDF4;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px #12233F12;
+
+}
+
+.card-week p {
+    font-size: 12px;
+    color: var(--navy);
+}
+
+.week-icon {
+    font-size: 24px;
+}
+
+.card-week small {
+    color: var(--gray);
+    font-size: 10px;
 }
