@@ -24,9 +24,7 @@ header{
     padding:24px 64px;
     border-bottom:1px solid var(--border);
     background-color:var(--white);
-
 }
-
 
 .logo{
     display:flex;
@@ -63,8 +61,7 @@ header{
     padding: 12 16px;
     border: 1px solid var(--border);
     border-radius: 8px;
-    max-width:500px;
-   
+    max-width:500px;  
 }
 
 .search button{
@@ -98,7 +95,6 @@ main{
     box-shadow: 0px 8px 24px 0px #12233F14;
     background-color: var(--white) ;
     border-radius: 16px;
-
 }
 .current-top {
     display: flex;
@@ -107,7 +103,6 @@ main{
     padding-bottom: 24px;
     border-bottom: 1px solid var(--border);
 }
-
 
  .current-bottom{
     display: flex;
@@ -150,7 +145,6 @@ main{
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 8px;
-
 }
 .weather-descr small{
 color: var(--gray);
@@ -172,7 +166,6 @@ font-size: 12px;
     border-radius: 999px;
     font-size:12px;
     color: var(--white);
-
 }
 .weather-details {
     margin-top: 40px;
@@ -181,8 +174,6 @@ font-size: 12px;
     font-size: 18px ;
     font-weight:500 ;
     margin-bottom: 16px;
-    
-
 }
 .Today{
     color: var(--blue);
@@ -194,7 +185,6 @@ font-size: 12px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap:15px;
-    
 }
 .card{
     padding: 20px 16px;
@@ -203,7 +193,6 @@ font-size: 12px;
     box-shadow: 0 8px 20px #12233F12;
     background-color: var(--white);
     border: 1px solid var(--border);
-    
 }
 .icon{
     display: block;
@@ -227,7 +216,6 @@ font-size: 12px;
      font-size: 18px ;
     font-weight:500 ;
     margin-bottom: 16px;
-
 }
 .Forecast{
     color:var(--blue);
@@ -255,7 +243,6 @@ font-size: 12px;
     justify-content: center;
     gap: 14px;
     border-radius: 10px;
-
 }
 .card-hours{
     background-color: var(--blue);
@@ -270,9 +257,12 @@ font-size: 12px;
 .card-another {
     background-color: var(--white);
     border: 1px solid transparent;
+     transition: background-color 0.2s ease,
+                transform 0.2s ease;
 }
 .card-another:hover {
     background-color: var(--sky);
+    transform: translateY(-3px);
 }
 .day-forecast{
    margin-top: 40px; 
@@ -306,7 +296,8 @@ font-size: 12px;
     border: 1px solid #E5EDF4;
     border-radius: 12px;
     box-shadow: 0 8px 20px #12233F12;
-
+    transition: transform 0.2s ease,
+                box-shadow 0.2s ease;   
 }
 
 .card-week p {
@@ -321,4 +312,46 @@ font-size: 12px;
 .card-week small {
     color: var(--gray);
     font-size: 10px;
+}
+.card-week:hover {
+   transform: translateY(-4px);
+    box-shadow: 0 10px 24px #12233F20;
+}
+.card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 24px #12233F20;
+}
+.card {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.footer{
+    min-height: 88px;
+    padding:22px 32px;
+    display:flex;
+    justify-content:space-between ;
+    align-items: center;
+    background-color: var(--navy);
+    color: var(--white);
+    gap:20px;
+     margin-top: 24px;
+}
+.footer-information{
+    display:flex;
+    flex-direction: column;
+    gap:6px
+}
+.footer-information strong{
+    font-size: 11px;
+    font-weight: 700;
+    color:var(--white);
+}
+.footer-information span{
+    font-size:10px;
+    color:var(--gray);
+}
+.idea{
+    color:var(--gray);
+}
+.copy{
+   color:var(--gray); 
 }
