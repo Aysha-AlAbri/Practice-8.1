@@ -1,78 +1,80 @@
 <!DOCTYPE html>
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Skycast - Weather Dashboard</title>
-   <link rel="stylesheet" href="reset.css">
+  <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="styles.css">
- 
+
 </head>
+
 <body>
-    <header>
-        <div class="logo" > <span>☀️ </span></div> <h1> Skycast</h1>
-        <form class="search" >
-        <input type="text"  placeholder="Search for a city…">
-        <button type="submit" >Search</button>
-        </form>
-        <nav >
-          <a href="#"  class="active">Today</a>
-          <a href="#">Forecast</a>
-     
+  <header>
+    <a class="logo" href="#top"> <span>☀️</span>Skycast</a>
+    <form class="search">
+      <input type="text" placeholder="Search for a city…">
+      <button type="submit">Search</button>
+    </form>
+    <nav>
+      <a href="#" class="active">Today</a>
+      <a href="#">Forecast</a>
+
     </nav>
-    </header>
-    <main >
-      <section class="current">
-        <div class="updated">Updated 10:30</div>
+  </header>
+  <main>
+    <section class="current">
+      <div class="updated">Updated 10:30</div>
 
-        <div class="current-top">
-          <div>
-            <h2 class="location">Current weather</h2>
-            <p class="city">London, UK</p>
-            <small">Monday, 16 September</small>
-          </div>
-          <div class="weather-img">🌤️</div>
-          </div>
+      <div class="current-top">
+        <div>
+          <h2 class="location">Current weather</h2>
+          <p class="city">London, UK</p>
+          <small">Monday, 16 September</small>
+        </div>
+        <div class="weather-img">🌤️</div>
+      </div>
 
-          <div class="current-bottom">
-            <div class="degrees"><span>18</span>°C </span> </div>
+      <div class="current-bottom">
+        <div class="degrees"><span>18</span>°C </span> </div>
 
-                <div class="weather-descr">
-                    <span>Partly cloudy</span>
-                    <small>Feels like 17°C</small>
-                </div>
-          </div>
-        
-        </section>
-        <section class="weather-details">
-          <p class="Today" >TODAY</p>
-          <h2>Weather details</h2>
-          <div class="details">
-            <article class="card" > <span class="icon">💧</span>
-               <p class="subject">Humidity</p>
-               <p class="value">72%</p>
-            </article>
-            <article class="card"> <span class="icon">🌬️</span>
-               <p class="subject">Wind</p>
-               <p class="value">14 km/h</p>
-            </article>
-            <article class="card"> <span class="icon">☀</span>
-               <p class="subject">Visibility</p>
-               <p class="value">10 km</p>
-            </article>
-          </div>
-        </section>
+        <div class="weather-descr">
+          <span>Partly cloudy</span>
+          <small>Feels like 17°C</small>
+        </div>
+      </div>
 
-        <section class="Next-few-hours">
-          <p class="Forecast" >Forecast</p>
-          <h2>Next few hours</h2>
-          <div class="details-hours">
+    </section>
+    <section class="weather-details">
+      <p class="Today">TODAY</p>
+      <h2>Weather details</h2>
+      <div class="details">
+        <article class="card"> <span class="icon">💧</span>
+          <p class="subject">Humidity</p>
+          <p class="value">72%</p>
+        </article>
+        <article class="card"> <span class="icon">🌬️</span>
+          <p class="subject">Wind</p>
+          <p class="value">14 km/h</p>
+        </article>
+        <article class="card"> <span class="icon">☀</span>
+          <p class="subject">Visibility</p>
+          <p class="value">10 km</p>
+        </article>
+      </div>
+    </section>
 
-            <article class="card-hours" >
-                <p>Now</p>
-               <span class="hour-icon">🌤️</span>
-            <strong>18°</strong>
+    <section class="Next-few-hours">
+      <p class="Forecast">FORECAST</p>
+      <h2>Next few hours</h2>
+      <div class="details-hours">
+
+        <article class="card-hours">
+          <p>Now</p>
+          <span class="hour-icon">🌤️</span>
+          <strong>18°</strong>
         </article>
 
         <article class="card-another">
@@ -87,60 +89,58 @@
           <strong>18°</strong>
         </article>
 
-         <article class="card-another">
+        <article class="card-another">
           <p>4 PM</p>
           <span class="hour-icon">🌤️</span>
           <strong>17°</strong>
         </article>
-        </div>
-        </section>
+      </div>
+    </section>
 
-         <section class="day-forecast">
+    <section class="day-forecast">
 
-    <p class="week">THIS WEEK</p>
-    <h2>5-day forecast</h2>
+      <p class="week">THIS WEEK</p>
+      <h2>5-day forecast</h2>
 
-    <div class="details-week">
+      <div class="details-week">
 
         <article class="card-week">
-            <p>Tue</p>
-            <span class="week-icon">🌤️</span>
-            <small>19° / 12°</small>
+          <p>Tue</p>
+          <span class="week-icon">🌤️</span>
+          <small>19° / 12°</small>
         </article>
 
         <article class="card-week">
-            <p>Wed</p>
-            <span class="week-icon">🌧️</span>
-            <small>16° / 10°</small>
+          <p>Wed</p>
+          <span class="week-icon">🌧️</span>
+          <small>16° / 10°</small>
         </article>
 
         <article class="card-week">
-            <p>Thu</p>
-            <span class="week-icon">⛅</span>
-            <small>17° / 11°</small>
+          <p>Thu</p>
+          <span class="week-icon">⛅</span>
+          <small>17° / 11°</small>
         </article>
 
         <article class="card-week">
-            <p>Fri</p>
-            <span class="week-icon">☀️</span>
-            <small>21° / 13°</small>
+          <p>Fri</p>
+          <span class="week-icon">☀️</span>
+          <small>21° / 13°</small>
         </article>
 
         <article class="card-week">
-            <p>Sat</p>
-            <span class="week-icon">🌤️</span>
-            <small>20° / 12°</small>
+          <p>Sat</p>
+          <span class="week-icon">🌤️</span>
+          <small>20° / 12°</small>
         </article>
-        </div>
-      </section>
-    </main>
-      <footer class="footer">
-        <div class ="footer-information">
-          <strong>Skycast</strong>
-           <span>Simple weather for everyday planning.</span>
-        </div>
-        <p class="idea"> <small>Fictional data for a student project.</small></p>
-         <p class="copy"><small>© 2025 Skycast </small> </p>
-      </footer>
-        
-   
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer-information">
+      <strong>Skycast</strong>
+      <span>Simple weather for everyday planning.</span>
+    </div>
+    <p class="idea"> <small>Fictional data for a student project.</small></p>
+    <p class="copy"><small>© 2025 Skycast </small> </p>
+  </footer>
